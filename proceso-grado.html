@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proceso de Grado - UNAD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ================= RESET ================= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #ffe07a;
+    }
+
+    /* ================= BARRA SUPERIOR ================= */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 35px;
+    }
+
+    .top-bar img {
+      max-height: 110px; /* Logo UNAD grande */
+    }
+
+    .home-btn img {
+      width: 65px;
+      cursor: pointer;
+    }
+
+    /* ================= CONTENIDO ================= */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 45px;
+      padding: 30px 60px 60px;
+    }
+
+    /* Imagen izquierda */
+    .left {
+      display: flex;
+      justify-content: center;
+    }
+
+    .left img {
+      max-width: 90%;
+      border: 20px solid #4a90e2;
+      background: white;
+      padding: 10px;
+    }
+
+    /* Botones */
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-content: start;
+    }
+
+    .btn {
+      background-color: #1b7fae;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #135d7d;
+      transform: translateY(-3px);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= BARRA SUPERIOR ================= -->
+  <header class="top-bar">
+
+    <!-- LOGO UNAD -->
+    <img src="logo-UNAD.png" alt="UNAD">
+
+    <!-- BOTÓN INICIO -->
+    <a href="PAGINA UNAD ESTUDIANTES.html">
+      <div class="home-btn">
+        <img src="inicio.png" alt="Inicio">
+      </div>
+    </a>
+
+  </header>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main class="content">
+
+    <!-- Imagen izquierda -->
+    <div class="left">
+      <img src="Proceso-de-grado.png" alt="Proceso de Grado">
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons">
+
+      <div class="btn">Opciones de grado</div>
+
+      <div class="btn">Inscripción de opción de grado</div>
+
+      <div class="btn">Requisitos</div>
+
+      <div class="btn">Calendario</div>
+
+      <div class="btn">Pasantías</div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

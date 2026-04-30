@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Egresados - UNAD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* ================= RESET ================= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #ffe07a;
+    }
+
+    /* ================= BARRA SUPERIOR ================= */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 35px;
+    }
+
+    .top-bar img {
+      max-height: 110px; /* Logo UNAD grande */
+    }
+
+    .home-btn img {
+      width: 65px;
+      cursor: pointer;
+    }
+
+    /* ================= CONTENIDO ================= */
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 45px;
+      padding: 30px 60px 60px;
+    }
+
+    /* Imagen izquierda */
+    .left {
+      display: flex;
+      justify-content: center;
+    }
+
+    .left img {
+      max-width: 90%;
+      border: 20px solid #4a90e2;
+      background: white;
+      padding: 10px;
+    }
+
+    /* Botones */
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-content: start;
+    }
+
+    .btn {
+      background-color: #1b7fae;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #135d7d;
+      transform: translateY(-3px);
+    }
+
+    /* Botón que ocupa dos columnas (mantiene simetría) */
+    .btn-full {
+      grid-column: span 2;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= BARRA SUPERIOR ================= -->
+  <header class="top-bar">
+
+    <!-- LOGO UNAD -->
+    <img src="logo-UNAD.png" alt="UNAD">
+
+    <!-- BOTÓN INICIO -->
+    <a href="PAGINA UNAD ESTUDIANTES.html" target="_self">
+      <div class="home-btn">
+        <img src="inicio.png" alt="Inicio">
+      </div>
+    </a>
+
+  </header>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main class="content">
+
+    <!-- Imagen izquierda -->
+    <div class="left">
+      <img src="Egresados.png" alt="Egresados">
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons">
+
+      <div class="btn">Tarjeta profesional</div>
+      <div class="btn">Portal laboral</div>
+
+      <div class="btn btn-full">Formación continua</div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>

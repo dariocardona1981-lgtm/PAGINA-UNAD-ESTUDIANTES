@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal ECBTI – Estudiantes</title>
+
+  <style>
+    /* ================= RESET GENERAL ================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #e6e6e6;
+    }
+
+    /* ================= BANNER SUPERIOR ================= */
+    .hero {
+      background-color: #f6b400;
+      padding: 12px 20px;          /* Banner más compacto */
+      display: flex;
+      gap: 20px;
+      max-height: 260px;           /* Controla la altura */
+      overflow: hidden;
+    }
+
+    /* ----- BLOQUE IZQUIERDO (LOGO UNAD) ----- */
+    .hero-left {
+      width: 30%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    /* 🔴 AQUÍ SE CONTROLA EL TAMAÑO DEL LOGO */
+    .hero-left img {
+      width: 100%;
+      max-width: 580px;            /* ⬅️ LOGO MÁS GRANDE */
+      height: auto;
+    }
+
+    /* ----- BLOQUE DERECHO (IMAGEN HERO) ----- */
+    .hero-right {
+      width: 70%;
+      background: linear-gradient(90deg, #226ecb, #226ecb);
+      border: 3px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .hero-right img {
+      width: 100%;
+      max-height: 230px;            /* Evita que el banner crezca */
+      object-fit: contain;
+      display: block;
+    }
+
+    /* ================= CONTENIDO PRINCIPAL ================= */
+    main {
+      background-color: #ffffff;
+      padding: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      border: 30px solid #4a90e2;
+      background-color: #ffffff;
+      padding: 10px;
+      cursor: pointer;
+
+      max-width: 420px;
+      height: 380px;          /* ⬅️ CLAVE: MISMA ALTURA */
+      margin: 0 auto;
+
+      display: flex;          /* ⬅️ CENTRAR CONTENIDO */
+      align-items: center;
+      justify-content: center;
+
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;    /* ⬅️ adapta sin deformar */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        max-height: none;
+      }
+
+      .hero-left,
+      .hero-right {
+        width: 100%;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= BANNER ================= -->
+  <header class="hero">
+
+    <!-- BLOQUE IZQUIERDO: LOGO UNAD -->
+    <div class="hero-left">
+      <img src="logo-UNAD.png" alt="Universidad Nacional Abierta y a Distancia UNAD">
+    </div>
+
+    <!-- BLOQUE DERECHO: HERO PRINCIPAL -->
+    <div class="hero-right">
+      <img src="HERO.png" alt="Portal ECBTI Estudiantes">
+    </div>
+
+  </header>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main>
+
+    <div class="grid">
+
+  <a href="gestion-academica.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="Gestión-académica.png" alt="Gestión Académica">
+    </div>
+  </a>
+
+  <a href="desarrollo-academico.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="Desarrollo-académico.png" alt="Desarrollo Académico">
+    </div>
+  </a>
+
+  <a href="evaluacion-requisitos.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="Evaluación-y-requisitos.png" alt="Evaluación y Requisitos">
+    </div>
+  </a>
+
+  <a href="proceso-grado.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="Proceso-de-grado.png" alt="Proceso de Grado">
+    </div>
+  </a>
+
+  <a href="orientacion-recursos.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="orientación-y-recursos.png" alt="Orientación y Recursos">
+    </div>
+  </a>
+
+  <a href="egresados.html" target="_blank" rel="noopener noreferrer">
+    <div class="card">
+      <img src="Egresados.png" alt="Egresados">
+    </div>
+  </a>
+
+</div>
+
+  </main>
+
+</body>
+</html>
